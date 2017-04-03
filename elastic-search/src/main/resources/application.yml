@@ -1,0 +1,7 @@
+server:
+  contextPath: /elasic-search
+  port: 8090
+
+spring:
+  application:
+   name: elasic-search
