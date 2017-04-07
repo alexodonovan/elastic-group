@@ -76,7 +76,7 @@ public class DocumentRepository {
 		try {
 			List<Document> docs = Lists.newArrayList();
 			IndexSearcher indexSearcher = indexSearcher();
-			ScoreDoc[] hits = indexSearcher.search(query, 100).scoreDocs;
+			ScoreDoc[] hits = indexSearcher.search(query, count).scoreDocs;
 			for (int i = 0; i < hits.length; i++) {
 				docs.add(indexSearcher.doc(hits[i].doc));
 			}
